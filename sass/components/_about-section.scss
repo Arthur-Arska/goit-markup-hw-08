@@ -1,0 +1,42 @@
+.gallery-title {
+  font-family: $mainFontType;
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+
+  color: getColor("primaryBlack");
+}
+
+.gallery-list-item {
+  position: relative;
+}
+
+.gallery-image-label {
+  @extend %contantAlign;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+
+  font-family: $mainFontType;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: getColor("primaryWhite");
+}
+
+.gallery-list {
+  display: flex;
+}
+
+.gallery-list-item:not(:last-child) {
+  margin-right: 30px;
+}

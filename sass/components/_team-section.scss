@@ -1,0 +1,91 @@
+.studio-team {
+  background-color: getColor("background");
+}
+
+.team-wrapper {
+  padding-top: 30px;
+}
+
+.team-title {
+  font-family: $mainFontType;
+
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  letter-spacing: 0.03em;
+  color: getColor("primaryBlack");
+  margin-bottom: 50px;
+}
+
+.team-list {
+  display: flex;
+  justify-content: center;
+}
+
+.team-member {
+  font-family: $mainFontType;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.188;
+  letter-spacing: 0.03em;
+  color: getColor("primaryBlack");
+  margin-bottom: 10px;
+}
+
+.member-post {
+  font-family: $mainFontType;
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.188;
+  letter-spacing: 0.03em;
+  color: getColor("secondary");
+  margin-bottom: 16px;
+}
+
+.team-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team-list-item {
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  padding-bottom: 30px;
+}
+
+.social-list {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 32px;
+  padding-left: 32px;
+}
+
+.social-list-link {
+  @extend %contantAlign;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  background-color: getColor("primaryWhite");
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: getColor("emphasis");
+  }
+}
+
+.social-list-icon {
+  fill: getColor("link");
+  width: 20px;
+  height: 20px;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .social-list-link:hover &,
+  .social-list-link:focus & {
+    fill: getColor("primaryWhite");
+  }
+}

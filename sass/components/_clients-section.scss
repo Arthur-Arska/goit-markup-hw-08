@@ -1,0 +1,49 @@
+.client-title {
+  font-family: $mainFontType;
+
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  letter-spacing: 0.03em;
+  color: getColor("primaryBlack");
+  margin-bottom: 50px;
+}
+
+.client-list-link {
+  @extend %contantAlign;
+  border-radius: 4px;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+
+  &:hover,
+  &:focus {
+    background-color: getColor("primaryWhite");
+    border-color: getColor("emphasis");
+  }
+}
+
+.client-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.client-list-icon {
+  width: 170px;
+  height: 90px;
+  fill: getColor("link");
+}
+
+.client-list-icon,
+.client-list-link {
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.client-list-icon {
+  .client-list-link:hover &,
+  .client-list-link:focus & {
+    fill: getColor("emphasis");
+  }
+}

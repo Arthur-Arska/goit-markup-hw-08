@@ -1,0 +1,184 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: all 300ms linear;
+}
+
+.backdrop .is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  width: 528px;
+  transition: transform 300ms linear;
+  background-color: getColor("primaryWhite");
+  border-radius: 4px;
+  padding: 40px;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-form-input-wrapper {
+  position: relative;
+  display: block;
+  margin-top: 4px;
+}
+
+.modal-form-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 42px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus {
+    outline: none;
+    border-color: getColor("emphasis");
+  }
+
+  &:focus + .modal-form-icon {
+    fill: getColor("emphasis");
+  }
+}
+
+.modal-form-field:not(:first-child) {
+  margin-top: 10px;
+}
+
+.modal-form-icon {
+  position: absolute;
+  bottom: 11px;
+  left: 12px;
+  width: 18px;
+  height: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-message {
+  display: block;
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-top: 4px;
+  padding: 12px 16px;
+  resize: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus {
+    border-color: getColor("emphasis");
+    outline: none;
+  }
+}
+
+.modal-form-policy-text {
+  font-family: $mainFontType;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  color: getColor("secondary");
+}
+
+.modal-form-policy:checked + .modal-form-policy-text::before {
+  background-image: url("../images/check-mark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: getColor("emphasis");
+  border: hidden;
+}
+
+.modal-form-policy-text::before {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 2px solid black;
+  border-radius: 2px;
+  content: "";
+  margin-top: 20px;
+  margin-right: 8px;
+}
+
+textarea::placeholder {
+  font-family: $mainFontType;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.contract-terms {
+  text-decoration: underline;
+  color: getColor("emphasis");
+}
+
+.modal-form-button {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background-color: getColor("emphasis");
+  border-style: hidden;
+  border-radius: 4px;
+  max-width: 200px;
+  display: block;
+  margin: 0 auto;
+  padding: 10px 55px 10px 56px;
+
+  font-family: $mainFontType;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: getColor("primaryWhite");
+}
+
+.close-button {
+  width: 30px;
+  height: 30px;
+  background-color: getColor("primaryWhite");
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.close-button-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
