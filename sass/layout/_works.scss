@@ -1,4 +1,10 @@
-.gallery-title {
+.works {
+  @media (max-width: 1200px) {
+    display: none;
+  }
+}
+
+.works-title {
   font-family: $mainFontType;
   text-align: center;
   font-weight: 700;
@@ -10,11 +16,11 @@
   color: getColor("primaryBlack");
 }
 
-.gallery-list-item {
+.works-list-item {
   position: relative;
 }
 
-.gallery-image-label {
+.works-image-label {
   @extend %contantAlign;
   position: absolute;
   bottom: 0;
@@ -33,10 +39,10 @@
   color: getColor("primaryWhite");
 }
 
-.gallery-list {
+.works-list {
   display: flex;
 }
 
-.gallery-list-item:not(:last-child) {
+.works-list-item:not(:last-child) {
   margin-right: 30px;
 }
