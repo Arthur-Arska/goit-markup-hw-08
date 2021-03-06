@@ -1,15 +1,16 @@
 @import "./base/resets";
 @import "./base/normalize";
+@import "./base/container";
 @import "./base/visually-hidden";
+@import "./components/backdrop";
 @import "./utils/variables";
 @import "./utils/placeholder";
-@import "./components/page-header";
+@import "./layout/page-header";
 @import "./components/modal-form";
-@import "./components/hero";
-@import "./components/features-section";
-@import "./components/about-section";
-@import "./components/team-section";
-@import "./components/clients-section";
-@import "./components/footer";
-
-@import "./base/normalize";
+@import "./components/.section";
+@import "./layout/hero";
+@import "./layout/features-section";
+@import "./layout/about-section";
+@import "./layout/team-section";
+@import "./layout/clients-section";
+@import "./layout/footer";
