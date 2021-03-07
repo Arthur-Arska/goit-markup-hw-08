@@ -317,6 +317,50 @@ summary {
   display: list-item;
 }
 
+.container {
+  width: 100%;
+  padding: 0 15px;
+  outline: 1px solid black;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+/* .container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+ */
+/*   .hero-baner {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+ */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -682,6 +726,9 @@ summary {
   .footer-contacts {
     text-align: center;
   }
+  .footer-form-button {
+    margin: auto;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -705,6 +752,9 @@ summary {
   }
   .footer-contacts {
     text-align: center;
+  }
+  .footer-form-button {
+    margin: auto;
   }
 }
 
@@ -764,7 +814,6 @@ summary {
           justify-content: center;
 }
 
-/*========== FLEX-CONTAINER ==========*/
 .portfolio-button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -773,46 +822,6 @@ summary {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 50px;
-}
-
-.flex-container {
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-right: auto;
-  margin-left: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-/*.card-content {
-  padding-right: 24px;
-  padding-left: 24px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}*/
-.card-set {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  /*outline: 1px solid tomato;*/
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
-}
-
-.card-set > .card-item {
-  /*outline: 1px solid yellow;*/
-  -ms-flex-preferred-size: calc(100% / 3 - var(--card-set-gap));
-      flex-basis: calc(100% / 3 - var(--card-set-gap));
-  margin-left: var(--card-set-gap);
-  margin-top: var(--card-set-gap);
 }
 
 .button-list {

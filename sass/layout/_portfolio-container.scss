@@ -2,55 +2,17 @@
   display: flex;
   justify-content: center;
 }
-
-/*========== FLEX-CONTAINER ==========*/
 .portfolio-button {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
-
-.flex-container {
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-right: auto;
-  margin-left: auto;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-/*.card-content {
-  padding-right: 24px;
-  padding-left: 24px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}*/
-
-.card-set {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  /*outline: 1px solid tomato;*/
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
-}
-
-.card-set > .card-item {
-  /*outline: 1px solid yellow;*/
-  flex-basis: calc(100% / 3 - var(--card-set-gap));
-  margin-left: var(--card-set-gap);
-  margin-top: var(--card-set-gap);
-}
-
 .button-list {
   margin-top: 94px;
   margin-bottom: 50px;
   margin-left: auto;
   margin-right: auto;
 }
-
 .button {
   display: inline-block;
   text-align: center;
@@ -74,11 +36,9 @@
       0px 2px 2px rgba(0, 0, 0, 0.12);
   }
 }
-
 .item:not(:last-child) {
   margin-right: 8px;
 }
-
 .card-link {
   display: block;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -89,7 +49,6 @@
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
 }
-
 .card-item {
   box-sizing: border-box;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -105,7 +64,6 @@
   position: relative;
   overflow: hidden;
 }
-
 .overlay {
   position: absolute;
   top: 0;
@@ -126,7 +84,6 @@
     transform: translateY(0%);
   }
 }
-
 .card-item-title {
   font-family: $mainFontType;
   font-weight: 700;
@@ -135,7 +92,6 @@
   letter-spacing: 0.06em;
   color: getColor("primaryBlack");
 }
-
 .card-item-type {
   font-family: $mainFontType;
   font-weight: 400;
