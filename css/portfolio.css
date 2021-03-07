@@ -493,14 +493,8 @@ summary {
   display: flex;
 }
 
-.footer > .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .address-item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .address-item {
@@ -518,6 +512,7 @@ summary {
 }
 
 .footer-contacts {
+  text-align: center;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -529,7 +524,7 @@ summary {
 .footer-contacts .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.192;
   letter-spacing: 0.03em;
   color: #2196f3;
@@ -546,19 +541,7 @@ summary {
 }
 
 .mail-item {
-  margin-bottom: 9px;
-}
-
-.footer-social {
-  padding-top: 72px;
-  padding-bottom: 100px;
-  padding-left: 70px;
-}
-
-.footer-social-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  margin-bottom: 8px;
 }
 
 .footer-social-list .footer-social-item:not(:last-child) {
@@ -599,10 +582,6 @@ summary {
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/*.footer-contacts .footer-social {
-  display: flex;
-  justify-content: ;
-}*/
 .social-call {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -612,6 +591,7 @@ summary {
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .footer-social-item .social-list-link {
@@ -626,18 +606,8 @@ summary {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 20px;
+  text-align: center;
   color: #ffffff;
-}
-
-.footer-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.footer-subscription {
-  margin-left: 93px;
-  padding-top: 72px;
 }
 
 .email-subscription {
@@ -648,9 +618,20 @@ summary {
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background: #2f303a;
-  width: 358px;
+  width: 450px;
   height: 50px;
   margin-right: 12px;
+  margin-bottom: 20px;
+}
+
+.subscription-icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
+
+.footer-form {
+  padding-bottom: 60px;
 }
 
 .footer-form-button {
@@ -678,13 +659,21 @@ summary {
           align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+  margin: auto;
   color: #ffffff;
 }
 
-.subscription-icon {
-  width: 24px;
-  height: 24px;
-  margin-left: 10px;
+.footer-social {
+  padding-bottom: 60px;
+}
+
+.footer-social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .button-list {
