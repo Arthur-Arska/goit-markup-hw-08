@@ -22,7 +22,6 @@
 }
 
 .footer-contacts {
-  text-align: center;
   padding-top: 60px;
   padding-bottom: 60px;
 
@@ -34,7 +33,7 @@
     font-family: $logoFontType;
     font-weight: 700;
     font-size: 24px;
-    line-height: 1.192;
+    line-height: 1.166;
     letter-spacing: 0.03em;
     color: getColor("emphasis");
   }
@@ -103,7 +102,6 @@
 
   color: getColor("primaryWhite");
   margin-bottom: 20px;
-  text-align: center;
 }
 
 .footer-social-item {
@@ -120,7 +118,6 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 20px;
-  text-align: center;
   color: getColor("primaryWhite");
 }
 
@@ -165,8 +162,6 @@
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  margin: auto;
-
   color: getColor("primaryWhite");
 }
 
@@ -177,4 +172,78 @@
 .footer-social-list {
   display: flex;
   justify-content: center;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .footer-subscription-text {
+    text-align: center;
+  }
+  .social-call {
+    text-align: center;
+  }
+  .footer-contacts {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+  .footer-subscription-text {
+    text-align: center;
+  }
+  .social-call {
+    text-align: center;
+  }
+  .footer-contacts {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-form {
+    display: flex;
+  }
+  .footer-social {
+    padding-top: 72px;
+    padding-bottom: 100px;
+    padding-left: 70px;
+  }
+
+  .mail-item {
+    margin-bottom: 9px;
+  }
+
+  .logo {
+    font-size: 26px;
+    line-height: 1.192;
+  }
+
+  .footer-form-button {
+    cursor: pointer;
+  }
+
+  .email-subscription {
+    width: 358px;
+    margin-right: 12px;
+  }
+
+  .footer-subscription {
+    margin-left: 93px;
+    padding-top: 72px;
+  }
+  .address-item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  .footer-social-list {
+    display: flex;
+  }
 }
