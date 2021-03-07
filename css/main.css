@@ -403,6 +403,24 @@ summary {
           justify-content: center;
 }
 
+.feauture-title, .team-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #212121;
+}
+
+.team-member {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: #212121;
+}
+
+.member-post {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #757575;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -759,9 +777,18 @@ textarea::placeholder {
   pointer-events: none;
 }
 
-.section .container {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (min-width: 1200px) {
+  .section .container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  .section .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .hero {
@@ -901,13 +928,10 @@ textarea::placeholder {
 }
 
 .feauture-title {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #212121;
   margin-bottom: 10px;
   margin-top: 30px;
   text-align: center;
@@ -933,6 +957,7 @@ textarea::placeholder {
 @media screen and (min-width: 320px) and (max-width: 1199px) {
   .studio-features .container {
     padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 
@@ -993,7 +1018,6 @@ textarea::placeholder {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding-top: 94px;
   }
 }
 
@@ -1055,6 +1079,45 @@ textarea::placeholder {
   margin-right: 30px;
 }
 
+.team-title {
+  text-align: center;
+  font-size: 28px;
+  line-height: 1.178;
+  letter-spacing: 0.03em;
+  margin-bottom: 30px;
+}
+
+.team-member {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.188;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+}
+
+.social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .team-list-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.team-list-item {
+  background: #ffffff;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
 .studio-team {
   background-color: #f5f4fa;
 }
@@ -1063,71 +1126,53 @@ textarea::placeholder {
   padding-top: 30px;
 }
 
-.team-title {
-  font-family: "Roboto", sans-serif;
+/* .team-title {
+  @extend %titleBoldText;
   text-align: center;
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.167;
   letter-spacing: 0.03em;
-  color: #212121;
-  margin-bottom: 50px;
-}
-
+  margin-bottom: 30px;
+} */
 .team-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.team-member {
-  font-family: "Roboto", sans-serif;
+/* .team-member {
+  @extend %titleMediumText;
   text-align: center;
-  font-weight: 500;
   font-size: 16px;
   line-height: 1.188;
   letter-spacing: 0.03em;
-  color: #212121;
   margin-bottom: 10px;
-}
-
+} */
 .member-post {
-  font-family: "Roboto", sans-serif;
   text-align: center;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.188;
   letter-spacing: 0.03em;
-  color: #757575;
   margin-bottom: 16px;
 }
 
-.team-list-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.team-list-item {
+/* .team-list-item {
   background: #ffffff;
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   padding-bottom: 30px;
+} */
+.team-pic {
+  width: 100%;
 }
 
-.social-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
+/* .social-list {
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: center;
   padding-right: 32px;
   padding-left: 32px;
-}
-
+} */
 .social-list-link {
   border-radius: 50%;
   width: 44px;

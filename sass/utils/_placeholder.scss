@@ -3,3 +3,21 @@
   align-items: center;
   justify-content: center;
 }
+
+%titleBoldText {
+  font-family: $mainFontType;
+  font-weight: 700;
+  color: getColor("primaryBlack");
+}
+
+%titleMediumText {
+  font-family: $mainFontType;
+  font-weight: 500;
+  color: getColor("primaryBlack");
+}
+
+%descriptiveText {
+  font-family: $mainFontType;
+  font-weight: 400;
+  color: getColor("secondary");
+}
