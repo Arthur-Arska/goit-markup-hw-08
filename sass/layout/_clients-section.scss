@@ -3,8 +3,8 @@
 
   text-align: center;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.167;
+  font-size: 28px;
+  line-height: 1.178;
   letter-spacing: 0.03em;
   color: getColor("primaryBlack");
   margin-bottom: 50px;
@@ -13,10 +13,11 @@
 .client-list-link {
   @extend %contantAlign;
   border-radius: 4px;
-  width: 170px;
+  width: 210px;
   height: 90px;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
+  display: flex;
 
   &:hover,
   &:focus {
@@ -25,13 +26,8 @@
   }
 }
 
-.client-list {
-  display: flex;
-  justify-content: space-between;
-}
-
 .client-list-icon {
-  width: 170px;
+  width: 210px;
   height: 90px;
   fill: getColor("link");
 }
@@ -45,5 +41,20 @@
   .client-list-link:hover &,
   .client-list-link:focus & {
     fill: getColor("emphasis");
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .client-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .client-list-item {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
   }
 }
