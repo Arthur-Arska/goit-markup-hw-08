@@ -1,6 +1,6 @@
 .modal {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   width: 528px;
@@ -8,6 +8,11 @@
   background-color: getColor("primaryWhite");
   border-radius: 4px;
   padding: 40px;
+
+  @media screen and (max-width:480px) {
+    max-width: calc(100% - 60px);
+    margin-top: 93px;
+  }
 }
 
 .modal-form {

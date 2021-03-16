@@ -445,13 +445,14 @@ summary {
     width: 40px;
     height: 40px;
   }
-  .mobile-close-btn {
+  .burger-close-icon:hover,
+  .burger-close-icon:focus .mobile-close-btn {
     position: absolute;
     top: 10px;
     right: 15px;
   }
   .mobile-menu {
-    position: absolute;
+    position: fixed;
     max-width: 480px;
     width: 100%;
     height: 100vh;
@@ -462,7 +463,8 @@ summary {
     background-color: #ffffff;
     -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
-    padding: 48px 40px;
+    padding-top: 48px;
+    padding-left: 40px;
     overflow-y: scroll;
     -webkit-transition: -webkit-transform 300ms linear;
     transition: -webkit-transform 300ms linear;
@@ -542,7 +544,6 @@ summary {
     letter-spacing: 0.02em;
     font-size: 18px;
     line-height: 1.222;
-    margin-top: 64px;
   }
   .mobile-social-list-item {
     display: -webkit-box;
