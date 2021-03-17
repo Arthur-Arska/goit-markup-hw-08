@@ -34,6 +34,11 @@
                     </li>
                 </ul>
             </nav>
+            <button type="button" class="burger-btn" data-menu-button>
+                <svg class="burger-icon">
+                    <use href="./images/sprite.svg#burger-menu-icon"></use>
+                </svg>
+            </button>
             <address class="address">
                 <ul class="address-list">
                     <li class="address-list-item">
@@ -71,12 +76,12 @@
                     <li class="card-item">
                         <a class="card-link" href="">
                             <div class="card-image-wrapper">
-                                <picture class="projects__picture">
+                                <picture class="projects-pic">
                                     <source srcset="./images/portfolio-img/mobile/portfolio-mobile-card-1.webp 1x, 
-                                                                    ./images/portfolio-img/mobile/portfolio-mobile-card-1@2x.webp 2x" media="(min-width: 480px)"
+                                                                    ./images/portfolio-img/mobile/portfolio-mobile-card-1@2x.webp 2x" media="(min-width: 320px)"
                                         type="image/webp">
                                     <source srcset="./images/portfolio-img/mobile/portfolio-mobile-card-1.jpg 1x,
-                                                                    ./images/portfolio-img/mobile/portfolio-mobile-card-1@2x.jpg 2x" media="(min-width: 480px)">
+                                                                    ./images/portfolio-img/mobile/portfolio-mobile-card-1@2x.jpg 2x" media="(min-width: 320px)">
                                     <source srcset="./images/portfolio-img/mobile/portfolio-tablet-card-1.webp 1x,
                                                                     ./images/portfolio-img/mobile/portfolio-tablet-card-1.webp 2x" media="(min-width: 768px)"
                                         type="image/webp">
@@ -87,7 +92,7 @@
                                         type="image/webp">
                                     <source srcset="./images/portfolio-img/mobile/portfolio-desktop-card-1.jpg 1x,
                                                                     ./images/portfolio-img/mobile/portfolio-desktop-card-1@2x.jpg 2x" media="(min-width: 1200px)">
-                                    <img class="projects__img" src="./images/portfolio-img/mobile/portfolio-desktop-card-1.jpg" alt="Проект сайта">
+                                    <img class="project-img" src="./images/portfolio-img/mobile/portfolio-desktop-card-1.jpg" alt="Проект сайта">
                                 </picture>
                                 <p class="overlay">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
                                     для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -102,15 +107,15 @@
                     <li class="card-item">
                         <a class="card-link" href="">
                             <div class="card-image-wrapper">
-                                <picture class="projects__picture">
+                                <picture class="projects-pic">
                                     <source
                                         srcset="./images/portfolio-img/mobile/portfolio-mobile-card-2.webp 1x, 
                                                                                                     ./images/portfolio-img/mobile/portfolio-mobile-card-2@2x.webp 2x"
-                                        media="(min-width: 480px)" type="image/webp">
+                                        media="(min-width: 320px)" type="image/webp">
                                     <source
                                         srcset="./images/portfolio-img/mobile/portfolio-mobile-card-2.jpg 1x,
                                                                                                     ./images/portfolio-img/mobile/portfolio-mobile-card-2@2x.jpg 2x"
-                                        media="(min-width: 480px)">
+                                        media="(min-width: 320px)">
                                     <source
                                         srcset="./images/portfolio-img/mobile/portfolio-tablet-card-2.webp 1x,
                                                                                                     ./images/portfolio-img/mobile/portfolio-tablet-card-2.webp 2x"
@@ -127,7 +132,7 @@
                                         srcset="./images/portfolio-img/mobile/portfolio-desktop-card-2.jpg 1x,
                                                                                                     ./images/portfolio-img/mobile/portfolio-desktop-card-2@2x.jpg 2x"
                                         media="(min-width: 1200px)">
-                                    <img class="projects__img" src="./images/portfolio-img/mobile/portfolio-desktop-card-2.jpg" alt="Проект сайта">
+                                    <img class="project-img" src="./images/portfolio-img/mobile/portfolio-desktop-card-2.jpg" alt="Проект сайта">
                                 </picture>
                                 <p class="overlay">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem deleniti aut animi quibusdam eveniet, reiciendis sed, laudantium praesentium autem unde suscipit earum nihil totam soluta.</p>
                             </div>
@@ -141,15 +146,15 @@
                     <li class="card-item">
                         <a class="card-link" href="">
                             <div class="card-image-wrapper">
-                                <picture class="projects__picture">
+                                <picture class="projects-pic">
                                     <source
                                         srcset="./images/portfolio-img/mobile/portfolio-mobile-card-3.webp 1x, 
                                                                                                     ./images/portfolio-img/mobile/portfolio-mobile-card-3@2x.webp 2x"
-                                        media="(min-width: 480px)" type="image/webp">
+                                        media="(min-width: 320px)" type="image/webp">
                                     <source
                                         srcset="./images/portfolio-img/mobile/portfolio-mobile-card-3.jpg 1x,
                                                                                                     ./images/portfolio-img/mobile/portfolio-mobile-card-3@2x.jpg 2x"
-                                        media="(min-width: 480px)">
+                                        media="(min-width: 320px)">
                                     <source
                                         srcset="./images/portfolio-img/mobile/portfolio-tablet-card-3.webp 1x,
                                                                                                     ./images/portfolio-img/mobile/portfolio-tablet-card-3.webp 2x"
@@ -166,7 +171,7 @@
                                         srcset="./images/portfolio-img/mobile/portfolio-desktop-card-3.jpg 1x,
                                                                                                     ./images/portfolio-img/mobile/portfolio-desktop-card-3@2x.jpg 2x"
                                         media="(min-width: 1200px)">
-                                    <img class="projects__img" src="./images/portfolio-img/mobile/portfolio-desktop-card-3.jpg" alt="Проект сайта">
+                                    <img class="project-img" src="./images/portfolio-img/mobile/portfolio-desktop-card-3.jpg" alt="Проект сайта">
                                 </picture>
                                 <p class="overlay">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem deleniti aut animi quibusdam
                                     eveniet, reiciendis sed, laudantium praesentium autem unde suscipit earum nihil totam soluta.</p>
@@ -181,15 +186,15 @@
                     <li class="card-item">
                         <a class="card-link" href="">
                             <div class="card-image-wrapper">
-                                <picture class="projects__picture">
+                                <picture class="projects-pic">
                                     <source
                                         srcset="./images/portfolio-img/mobile/portfolio-mobile-card-4.webp 1x, 
                                                                                                     ./images/portfolio-img/mobile/portfolio-mobile-card-4@2x.webp 2x"
-                                        media="(min-width: 480px)" type="image/webp">
+                                        media="(min-width: 320px)" type="image/webp">
                                     <source
                                         srcset="./images/portfolio-img/mobile/portfolio-mobile-card-4.jpg 1x,
                                                                                                     ./images/portfolio-img/mobile/portfolio-mobile-card-4@2x.jpg 2x"
-                                        media="(min-width: 480px)">
+                                        media="(min-width: 320px)">
                                     <source
                                         srcset="./images/portfolio-img/mobile/portfolio-tablet-card-4.webp 1x,
                                                                                                     ./images/portfolio-img/mobile/portfolio-tablet-card-4.webp 2x"
@@ -206,7 +211,7 @@
                                         srcset="./images/portfolio-img/mobile/portfolio-desktop-card-4.jpg 1x,
                                                                                                     ./images/portfolio-img/mobile/portfolio-desktop-card-4@2x.jpg 2x"
                                         media="(min-width: 1200px)">
-                                    <img class="projects__img" src="./images/portfolio-img/mobile/portfolio-desktop-card-4.jpg" alt="Проект сайта">
+                                    <img class="project-img" src="./images/portfolio-img/mobile/portfolio-desktop-card-4.jpg" alt="Проект сайта">
                                 </picture>
                                 <p class="overlay">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem deleniti aut animi quibusdam
                                     eveniet, reiciendis sed, laudantium praesentium autem unde suscipit earum nihil totam soluta.</p>
@@ -221,15 +226,15 @@
                     <li class="card-item">
                         <a class="card-link" href="">
                             <div class="card-image-wrapper">
-                                <picture class="projects__picture">
+                                <picture class="projects-pic">
                                     <source
                                         srcset="./images/portfolio-img/mobile/portfolio-mobile-card-5.webp 1x, 
                                                                                                     ./images/portfolio-img/mobile/portfolio-mobile-card-5@2x.webp 2x"
-                                        media="(min-width: 480px)" type="image/webp">
+                                        media="(min-width: 320px)" type="image/webp">
                                     <source
                                         srcset="./images/portfolio-img/mobile/portfolio-mobile-card-5.jpg 1x,
                                                                                                     ./images/portfolio-img/mobile/portfolio-mobile-card-5@2x.jpg 2x"
-                                        media="(min-width: 480px)">
+                                        media="(min-width: 320px)">
                                     <source
                                         srcset="./images/portfolio-img/mobile/portfolio-tablet-card-5.webp 1x,
                                                                                                     ./images/portfolio-img/mobile/portfolio-tablet-card-5.webp 2x"
@@ -246,7 +251,7 @@
                                         srcset="./images/portfolio-img/mobile/portfolio-desktop-card-5.jpg 1x,
                                                                                                     ./images/portfolio-img/mobile/portfolio-desktop-card-5@2x.jpg 2x"
                                         media="(min-width: 1200px)">
-                                    <img class="projects__img" src="./images/portfolio-img/mobile/portfolio-desktop-card-5.jpg" alt="Проект сайта">
+                                    <img class="project-img" src="./images/portfolio-img/mobile/portfolio-desktop-card-5.jpg" alt="Проект сайта">
                                 </picture>
                                 <p class="overlay">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem deleniti aut animi quibusdam
                                     eveniet, reiciendis sed, laudantium praesentium autem unde suscipit earum nihil totam soluta.</p>
@@ -261,15 +266,15 @@
                     <li class="card-item">
                         <a class="card-link" href="">
                             <div class="card-image-wrapper">
-                                <picture class="projects__picture">
+                                <picture class="projects-pic">
                                     <source
                                         srcset="./images/portfolio-img/mobile/portfolio-mobile-card-6.webp 1x, 
                                                                                                     ./images/portfolio-img/mobile/portfolio-mobile-card-6@2x.webp 2x"
-                                        media="(min-width: 480px)" type="image/webp">
+                                        media="(min-width: 320px)" type="image/webp">
                                     <source
                                         srcset="./images/portfolio-img/mobile/portfolio-mobile-card-6.jpg 1x,
                                                                                                     ./images/portfolio-img/mobile/portfolio-mobile-card-6@2x.jpg 2x"
-                                        media="(min-width: 480px)">
+                                        media="(min-width: 320px)">
                                     <source
                                         srcset="./images/portfolio-img/mobile/portfolio-tablet-card-6.webp 1x,
                                                                                                     ./images/portfolio-img/mobile/portfolio-tablet-card-6.webp 2x"
@@ -286,7 +291,7 @@
                                         srcset="./images/portfolio-img/mobile/portfolio-desktop-card-6.jpg 1x,
                                                                                                     ./images/portfolio-img/mobile/portfolio-desktop-card-6@2x.jpg 2x"
                                         media="(min-width: 1200px)">
-                                    <img class="projects__img" src="./images/portfolio-img/mobile/portfolio-desktop-card-6.jpg" alt="Проект сайта">
+                                    <img class="project-img" src="./images/portfolio-img/mobile/portfolio-desktop-card-6.jpg" alt="Проект сайта">
                                 </picture>
                             <p class="overlay">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem deleniti aut animi quibusdam
                                 eveniet, reiciendis sed, laudantium praesentium autem unde suscipit earum nihil totam soluta.</p>
@@ -301,15 +306,15 @@
                     <li class="card-item">
                         <a class="card-link" href="">
                             <div class="card-image-wrapper">
-                                <picture class="projects__picture">
+                                <picture class="projects-pic">
                                     <source
                                         srcset="./images/portfolio-img/mobile/portfolio-mobile-card-7.webp 1x, 
                                                                                                     ./images/portfolio-img/mobile/portfolio-mobile-card-7@2x.webp 2x"
-                                        media="(min-width: 480px)" type="image/webp">
+                                        media="(min-width: 320px)" type="image/webp">
                                     <source
                                         srcset="./images/portfolio-img/mobile/portfolio-mobile-card-7.jpg 1x,
                                                                                                     ./images/portfolio-img/mobile/portfolio-mobile-card-7@2x.jpg 2x"
-                                        media="(min-width: 480px)">
+                                        media="(min-width: 320px)">
                                     <source
                                         srcset="./images/portfolio-img/mobile/portfolio-tablet-card-7.webp 1x,
                                                                                                     ./images/portfolio-img/mobile/portfolio-tablet-card-7.webp 2x"
@@ -326,7 +331,7 @@
                                         srcset="./images/portfolio-img/mobile/portfolio-desktop-card-7.jpg 1x,
                                                                                                     ./images/portfolio-img/mobile/portfolio-desktop-card-7@2x.jpg 2x"
                                         media="(min-width: 1200px)">
-                                    <img class="projects__img" src="./images/portfolio-img/mobile/portfolio-desktop-card-7.jpg" alt="Проект сайта">
+                                    <img class="project-img" src="./images/portfolio-img/mobile/portfolio-desktop-card-7.jpg" alt="Проект сайта">
                                 </picture>
                                 <p class="overlay">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem deleniti aut animi quibusdam
                                     eveniet, reiciendis sed, laudantium praesentium autem unde suscipit earum nihil totam soluta.</p>
@@ -341,15 +346,15 @@
                     <li class="card-item">
                         <a class="card-link" href="">
                             <div class="card-image-wrapper">
-                                <picture class="projects__picture">
+                                <picture class="projects-pic">
                                     <source
                                         srcset="./images/portfolio-img/mobile/portfolio-mobile-card-8.webp 1x, 
                                                                                                     ./images/portfolio-img/mobile/portfolio-mobile-card-8@2x.webp 2x"
-                                        media="(min-width: 480px)" type="image/webp">
+                                        media="(min-width: 320px)" type="image/webp">
                                     <source
                                         srcset="./images/portfolio-img/mobile/portfolio-mobile-card-8.jpg 1x,
                                                                                                     ./images/portfolio-img/mobile/portfolio-mobile-card-8@2x.jpg 2x"
-                                        media="(min-width: 480px)">
+                                        media="(min-width: 320px)">
                                     <source
                                         srcset="./images/portfolio-img/mobile/portfolio-tablet-card-8.webp 1x,
                                                                                                     ./images/portfolio-img/mobile/portfolio-tablet-card-8.webp 2x"
@@ -366,7 +371,7 @@
                                         srcset="./images/portfolio-img/mobile/portfolio-desktop-card-8.jpg 1x,
                                                                                                     ./images/portfolio-img/mobile/portfolio-desktop-card-8@2x.jpg 2x"
                                         media="(min-width: 1200px)">
-                                    <img class="projects__img" src="./images/portfolio-img/mobile/portfolio-desktop-card-8.jpg" alt="Проект сайта">
+                                    <img class="project-img" src="./images/portfolio-img/mobile/portfolio-desktop-card-8.jpg" alt="Проект сайта">
                                 </picture>
                                 <p class="overlay">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem deleniti aut animi quibusdam
                                     eveniet, reiciendis sed, laudantium praesentium autem unde suscipit earum nihil totam soluta.</p>
@@ -381,15 +386,15 @@
                     <li class="card-item ">
                         <a class="card-link" href="">
                             <div class="card-image-wrapper">
-                                <picture class="projects__picture">
+                                <picture class="projects-pic">
                                     <source
                                         srcset="./images/portfolio-img/mobile/portfolio-mobile-card-9.webp 1x, 
                                                                                                     ./images/portfolio-img/mobile/portfolio-mobile-card-9@2x.webp 2x"
-                                        media="(min-width: 480px)" type="image/webp">
+                                        media="(min-width: 320px)" type="image/webp">
                                     <source
                                         srcset="./images/portfolio-img/mobile/portfolio-mobile-card-9.jpg 1x,
                                                                                                     ./images/portfolio-img/mobile/portfolio-mobile-card-9@2x.jpg 2x"
-                                        media="(min-width: 480px)">
+                                        media="(min-width: 320px)">
                                     <source
                                         srcset="./images/portfolio-img/mobile/portfolio-tablet-card-9.webp 1x,
                                                                                                     ./images/portfolio-img/mobile/portfolio-tablet-card-9.webp 2x"
@@ -406,7 +411,7 @@
                                         srcset="./images/portfolio-img/mobile/portfolio-desktop-card-9.jpg 1x,
                                                                                                     ./images/portfolio-img/mobile/portfolio-desktop-card-9@2x.jpg 2x"
                                         media="(min-width: 1200px)">
-                                    <img class="projects__img" src="./images/portfolio-img/mobile/portfolio-desktop-card-9.jpg" alt="Проект сайта">
+                                    <img class="project-img" src="./images/portfolio-img/mobile/portfolio-desktop-card-9.jpg" alt="Проект сайта">
                                 </picture>
                                 <p class="overlay">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem deleniti aut animi quibusdam
                                     eveniet, reiciendis sed, laudantium praesentium autem unde suscipit earum nihil totam soluta.</p>

@@ -1,9 +1,11 @@
 @import "./base/resets";
 @import "./base/normalize";
 @import "./base/container";
+@import "./components/.section";
 @import "./base/visually-hidden";
 @import "./utils/variables";
 @import "./utils/placeholder";
 @import "./layout/page-header";
 @import "./layout/footer";
 @import "./layout/portfolio-container";
+@import "./layout/hero";

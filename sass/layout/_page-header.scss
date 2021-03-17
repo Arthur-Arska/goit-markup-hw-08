@@ -34,13 +34,15 @@
     height: 40px;
   }
 
-  .burger-close-icon:hover,
-  .burger-close-icon:focus 
-
   .mobile-close-btn {
     position: absolute;
     top: 10px;
     right: 15px;
+
+    &:hover,
+    &:focus {
+      fill: getColor("emphasis");
+    }
   }
 
   .mobile-menu {
@@ -90,6 +92,12 @@
 
   .mobile-menu-nav-link {
     color: getColor("primaryBlack");
+
+     &:hover,
+    &:focus {
+      color: getColor("emphasis");
+    }
+
   } 
 
   .mobile-menu-address {
