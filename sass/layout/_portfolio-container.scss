@@ -1,7 +1,7 @@
 .portfolio-button {
   margin-bottom: 50px;
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .button-list {
@@ -12,7 +12,7 @@
 }
 
 .button {
- font-weight: 500;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.625;
   text-align: center;
@@ -31,7 +31,7 @@
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
       0px 2px 2px rgba(0, 0, 0, 0.12);
   }
-    outline: none;
+  outline: none;
 }
 
 .item:not(:last-child) {
@@ -53,10 +53,6 @@
     flex-wrap: nowrap;
 
     margin-bottom: 30px;
-  }
-
-  .nav-list-link {
-    padding: 32px 0;
   }
 }
 

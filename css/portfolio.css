@@ -1051,9 +1051,6 @@ summary {
         flex-wrap: nowrap;
     margin-bottom: 30px;
   }
-  .nav-list-link {
-    padding: 32px 0;
-  }
 }
 
 @media screen and (min-width: 1200px) {
