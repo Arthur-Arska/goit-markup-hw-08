@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
+    <!--<link rel="stylesheet" href="./css/styles.css"> -->
 </head>
 
 <body>
@@ -20,14 +20,14 @@
     <header class="header">
         <div class="container">
             <nav class="navigation">
-                <a class="logo" href="index.html">Web<span class="logo-studio-black">Studio</span></a>
-    
+                <a class="logo" href="./index.html">Web<span class="logo-studio-black">Studio</span></a>
+        
                 <ul class="nav-menu">
                     <li class="nav-menu-list">
-                        <a class="nav-list-link" href="./index.html">Студия</a>
+                        <a class="nav-list-link current" href="./index.html">Студия</a>
                     </li>
                     <li class="nav-menu-list">
-                        <a class="nav-list-link current" href="./portfolio.html">Портфолио</a>
+                        <a class="nav-list-link" href="./portfolio.html">Портфолио</a>
                     </li>
                     <li class="nav-menu-list">
                         <a class="nav-list-link" href="./contacts.html">Контакты</a>
@@ -42,14 +42,14 @@
             <address class="address">
                 <ul class="address-list">
                     <li class="address-list-item">
-                        <a class="studio-address-link" href="mailto:info@example.com ">
+                        <a class="studio-address-link" href="mailto:info@example.com">
                             <svg class="address-list-icon" width="16" height="12">
                                 <use href="./images/sprite.svg#mail"></use>
                             </svg>info@example.com
                         </a>
                     </li>
                     <li class="address-list-item">
-                        <a class="studio-address-link" href="tel:+380991111111"><svg class="address-list-icon" width="16"
+                        <a class="studio-address-tel" href="tel:+380991111111"><svg class="address-list-icon" width="16"
                                 height="12">
                                 <use href="./images/sprite.svg#telephone"></use>
                             </svg>+38 099 111 11 11
@@ -57,6 +57,32 @@
                     </li>
                 </ul>
             </address>
+        </div>
+        <div class="mobile-menu" data-menu>
+            <button type="button" class="mobile-close-btn" data-menu-close>
+                <svg class="burger-close-icon">
+                    <use href="./images/sprite.svg#burger-close-icon"></use>
+                </svg>
+            </button>
+            <div class="mobile-menu-wrapper">
+                <ul class="mobile-menu-nav list">
+                    <li class="mobile-menu-nav-item"><a href="./index.html" class="mobile-menu-nav-link link">Студия</a></li>
+                    <li class="mobile-menu-nav-item"><a href="./portfolio.html" class="mobile-menu-nav-link link">Портфолио</a></li>
+                    <li class="mobile-menu-nav-item"><a href="./contacts.html" class="mobile-menu-nav-link link">Контакты</a></li>
+                </ul>
+                <ul class="mobile-address-list list">
+                    <li class="mobile-menu-address"><a href="" class="mobile-menu-address-tel link">+38 096 111 11 11</a></li>
+                    <li class="mobile-menu-address"><a href="" class="mobile-menu-address-mail link">info@devstudio.com</a></li>
+                </ul>
+            </div>
+            <div class="mobile-social-links">
+                <ul class="mobile-social-list list">
+                    <li class="mobile-social-list-item"><a href="" class="mobile-social-list-link link">Instagram</a></li>
+                    <li class="mobile-social-list-item"><a href="" class="mobile-social-list-link link">Twitter</a></li>
+                    <li class="mobile-social-list-item"><a href="" class="mobile-social-list-link link">Facebook</a></li>
+                    <li class="mobile-social-list-item"><a href="" class="mobile-social-list-link link">LinkedIn</a></li>
+                </ul>
+            </div>
         </div>
     </header>
     <main>
