@@ -1816,6 +1816,12 @@ textarea::placeholder {
   .item:nth-child(1), .item:nth-child(3) {
     margin-bottom: 15px;
   }
+  .burger-btn,
+  .mobile-close-btn {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1970,6 +1976,5 @@ textarea::placeholder {
   list-style: none;
   /*outline: 1px solid tomato;*/
   margin-left: -30px;
-  margin-top: -30px;
 }
 /*# sourceMappingURL=main.css.map */
