@@ -962,14 +962,14 @@ textarea::placeholder {
 }
 
 @media screen and (min-width: 1200px) {
-  .section .container {
+  .section {
     padding-top: 94px;
     padding-bottom: 94px;
   }
 }
 
 @media screen and (min-width: 320px) and (max-width: 1199px) {
-  .section .container {
+  .section {
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -1136,13 +1136,6 @@ textarea::placeholder {
   text-align: center;
   padding-top: 25px;
   padding-bottom: 25px;
-}
-
-@media screen and (min-width: 320px) and (max-width: 1199px) {
-  .studio-features .container {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
 }
 
 @media screen and (max-width: 767px) {
