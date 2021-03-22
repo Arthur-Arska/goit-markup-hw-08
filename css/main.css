@@ -753,7 +753,7 @@ summary {
 
 .modal {
   position: absolute;
-  top: 40%;
+  top: 54%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
@@ -764,6 +764,7 @@ summary {
   transition: transform 300ms linear, -webkit-transform 300ms linear;
   background-color: #ffffff;
   border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
   padding: 40px;
 }
 
