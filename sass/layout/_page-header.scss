@@ -1,3 +1,7 @@
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
 .logo {
   font-family: $logoFontType;
   font-weight: 700;
@@ -62,6 +66,7 @@
     overflow-y: scroll;
 
     transition: transform 300ms linear;
+    z-index: 1;
   }
 
   .mobile-menu.is-open {

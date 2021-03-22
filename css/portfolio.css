@@ -332,7 +332,6 @@ summary {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border-bottom: 1px solid #ececec;
 }
 
 .footer .container {
@@ -393,14 +392,14 @@ summary {
 }
  */
 @media screen and (min-width: 1200px) {
-  .section .container {
+  .section {
     padding-top: 94px;
     padding-bottom: 94px;
   }
 }
 
 @media screen and (min-width: 320px) and (max-width: 1199px) {
-  .section .container {
+  .section {
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -418,6 +417,10 @@ summary {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.header {
+  border-bottom: 1px solid #ececec;
 }
 
 .logo {
@@ -480,6 +483,7 @@ summary {
     transition: -webkit-transform 300ms linear;
     transition: transform 300ms linear;
     transition: transform 300ms linear, -webkit-transform 300ms linear;
+    z-index: 1;
   }
   .mobile-menu.is-open {
     -webkit-transform: translateX(-50%) translateY(0%);
@@ -758,9 +762,36 @@ summary {
   margin-right: 8px;
 }
 
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(33, 150, 243, 0.9);
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 1.556;
+  letter-spacing: 0.03em;
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+}
+
+.card-link:hover .overlay,
+.card-link:focus .overlay {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
 @media screen and (max-width: 767px) {
   .item:nth-child(1), .item:nth-child(3) {
     margin-bottom: 15px;
+  }
+  .overlay {
+    padding: 77px 24px;
   }
   .burger-btn,
   .mobile-close-btn {
@@ -778,31 +809,6 @@ summary {
 .card-image-wrapper {
   position: relative;
   overflow: hidden;
-}
-
-.overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-color: rgba(33, 150, 243, 0.9);
-  color: #ffffff;
-  padding: 63px 24px;
-  font-family: "Roboto", sans-serif;
-  font-size: 18px;
-  line-height: 1.556;
-  letter-spacing: 0.03em;
-  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
-}
-
-.card-link:hover .overlay,
-.card-link:focus .overlay {
-  -webkit-transform: translateY(0%);
-          transform: translateY(0%);
 }
 
 .card-item-title {
@@ -840,34 +846,40 @@ summary {
             justify-content: center;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    margin-right: 30px;
     margin-bottom: 30px;
   }
   .card-set {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    /*outline: 1px solid tomato;*/
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
   }
-  .card-item {
-    -ms-flex-preferred-size: calc(100% / 2 - 30px);
-        flex-basis: calc(100% / 2 - 30px);
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    -webkit-transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .card-set > .card-item {
+    -ms-flex-preferred-size: calc((100% - 15px * 4) / 2);
+        flex-basis: calc((100% - 15px * 4) / 2);
+    margin-left: var(--card-set-gap);
+    margin-top: var(--card-set-gap);
+    -webkit-transition: -webkit-box-shadow var(--transit-time) cubic-bezier(0.4, 0, 0.2, 1);
+    transition: -webkit-box-shadow var(--transit-time) cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow var(--transit-time) cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow var(--transit-time) cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow var(--transit-time) cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .card-item:hover {
+  .card-set > .card-item:hover {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
             box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   }
-  -webkit-transition: -webkit-box-shadow var(--transit-time) cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-box-shadow var(--transit-time) cubic-bezier(0.4, 0, 0.2, 1);
-  transition: box-shadow var(--transit-time) cubic-bezier(0.4, 0, 0.2, 1);
-  transition: box-shadow var(--transit-time) cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow var(--transit-time) cubic-bezier(0.4, 0, 0.2, 1);
+  .overlay {
+    padding: 49px 24px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -917,7 +929,6 @@ summary {
     margin-top: -30px;
   }
   .card-set > .card-item {
-    outline: 1px solid yellow;
     -ms-flex-preferred-size: calc((100% - 15px * 6) / 3);
         flex-basis: calc((100% - 15px * 6) / 3);
     margin-left: var(--card-set-gap);
@@ -1002,15 +1013,11 @@ summary {
   margin-top: 20px;
 }
 
-.footer-contacts .address {
-  margin-top: 20px;
-}
-
 .footer-contacts .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 1.166;
+  font-size: 26px;
+  line-height: 1.192;
   letter-spacing: 0.03em;
   color: #2196f3;
 }
@@ -1164,9 +1171,16 @@ summary {
   }
   .footer-contacts {
     text-align: center;
+    margin-bottom: 60px;
   }
   .footer-form-button {
     margin: auto;
+  }
+  .address-items {
+    margin-top: 20px;
+  }
+  .footer-social {
+    margin-bottom: 60px;
   }
 }
 
@@ -1209,6 +1223,9 @@ summary {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
   .footer-form {
     display: -webkit-box;
@@ -1216,8 +1233,6 @@ summary {
     display: flex;
   }
   .footer-social {
-    padding-top: 72px;
-    padding-bottom: 100px;
     padding-left: 70px;
   }
   .mail-item {
@@ -1236,7 +1251,9 @@ summary {
   }
   .footer-subscription {
     margin-left: 93px;
-    padding-top: 72px;
+  }
+  .address-items {
+    margin-top: 20px;
   }
   .address-item:not(:last-child) {
     margin-bottom: 9px;
